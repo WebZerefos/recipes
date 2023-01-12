@@ -1,11 +1,12 @@
 import { View, Text, ImageBackground, Image, SafeAreaView } from 'react-native'
 import React, { memo } from 'react'
 import styles from './styles'
+import Input from '../../components/Input'
 
 const Search = () => {
 	return (
-		<SafeAreaView>
-			<Text>Welcome</Text>
+		<SafeAreaView style={styles.container}>
+			<Input />
 		</SafeAreaView>
 	)
 }
