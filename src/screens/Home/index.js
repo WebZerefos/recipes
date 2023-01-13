@@ -4,6 +4,7 @@ import styles from './styles'
 import Button from '../../components/Button'
 import Input from '../../components/Input'
 import Title from '../../components/Title'
+import Categories from '../../components/Categories'
 
 const Home = ({ navigation }) => {
 	return (
@@ -14,6 +15,12 @@ const Home = ({ navigation }) => {
 			/>
 
 			<Title text='Featured Recipes' />
+
+			<Categories
+				categories={['Trending', 'Seasonal', 'Chocoholic']}
+				selectedCategory={'Trending'}
+				onCategoryPress={() => {}}
+			/>
 		</SafeAreaView>
 	)
 }
