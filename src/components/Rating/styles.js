@@ -2,10 +2,15 @@ import { StyleSheet } from 'react-native'
 import colors from '../../constants/colors'
 
 const styles = StyleSheet.create({
-	container: {
-		marginHorizontal: 24,
+	row: {
+		flexDirection: 'row',
+		alignItems: 'center',
 	},
-	recipeCard: {},
+	star: {
+		width: 12,
+		height: 12,
+		marginRight: 2,
+	},
 })
 
 export default styles

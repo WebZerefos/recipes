@@ -9,7 +9,8 @@ const styles = StyleSheet.create({
 		borderWidth: 1,
 		borderColor: colors.lightGrey,
 		padding: 10,
-		margin: 16,
+
+		marginHorizontal: 24,
 	},
 	input: {
 		color: colors.black,

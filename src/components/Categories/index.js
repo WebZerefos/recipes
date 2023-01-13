@@ -7,7 +7,7 @@ const Categories = ({ categories, selectedCategory, onCategoryPress }) => {
 	return (
 		<FlatList
 			horizontal
-			style={{ marginHorizontal: -24 }}
+			style={{ marginTop: 38 }}
 			data={categories}
 			keyExtractor={(item) => String(item)}
 			showsHorizontalScrollIndicator={false}
