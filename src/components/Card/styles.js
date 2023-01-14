@@ -32,20 +32,15 @@ const styles = StyleSheet.create({
 		borderRadius: 60,
 		marginTop: -60,
 	},
-	column: {
-		flexDirection: 'column',
-		justifyContent: 'center',
-		alignItems: 'center',
-		marginRight: 90,
-	},
-	icon: {
-		width: 25,
-		height: 25,
-		marginRight: 8,
-	},
 	time: {
 		color: colors.grey,
 		fontSize: 11,
+	},
+	footer: {
+		flex: 1,
+		flexDirection: 'column',
+		alignItems: 'center',
+		marginTop: 60,
 	},
 })
 

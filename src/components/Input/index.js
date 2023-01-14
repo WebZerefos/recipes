@@ -3,7 +3,7 @@ import React, { memo } from 'react'
 import styles from './styles'
 import colors from '../../constants/colors'
 
-const Input = ({ placeholder, showSearchIcon, pressable, onPress, style }) => {
+const Input = ({ showSearchIcon, pressable, onPress, style, ...props }) => {
 	const renderInput = () => (
 		<View style={styles.container}>
 			{showSearchIcon ? (
@@ -15,8 +15,8 @@ const Input = ({ placeholder, showSearchIcon, pressable, onPress, style }) => {
 
 			<TextInput
 				style={[styles.input, style]}
+				{...props}
 				placeholderTextColor={colors.lightGrey}
-				placeholder={placeholder}
 				editable={!pressable}
 			/>
 		</View>

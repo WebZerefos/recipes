@@ -1,11 +1,14 @@
-import { Text, View, Image } from 'react-native'
+import { Text, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import styles from './styles'
 import Rating from '../Rating'
 
-const RecipeCard = ({ title, style, image, author, rating, time }) => {
+const RecipeCard = ({ title, style, image, author, rating, time, onPress }) => {
 	return (
-		<View style={[styles.container, style]}>
+		<TouchableOpacity
+			style={[styles.container, style]}
+			onPress={onPress}
+		>
 			<View style={styles.row}>
 				<Text
 					style={styles.title}
@@ -46,7 +49,7 @@ const RecipeCard = ({ title, style, image, author, rating, time }) => {
 					<View />
 				)}
 			</View>
-		</View>
+		</TouchableOpacity>
 	)
 }
 

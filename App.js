@@ -7,6 +7,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import Home from './src/screens/Home'
 import Search from './src/screens/Search'
 import { getRecipesList } from './src/services'
+import RecipeDetails from './src/screens/RecipeDetails'
 
 const Stack = createStackNavigator()
 
@@ -14,7 +15,6 @@ export const RecipesContext = createContext()
 export const HealthyRecipesContext = createContext()
 
 const BackButton = (props) => {
-	console.log('PROPS >>> ', props)
 	return (
 		<Pressable onPress={props.onPress}>
 			<Image
@@ -73,6 +73,11 @@ export default function App() {
 						<Stack.Screen
 							name='Search'
 							component={Search}
+							options={{ headerLeft: (props) => <BackButton {...props} /> }}
+						/>
+						<Stack.Screen
+							name='RecipeDetails'
+							component={RecipeDetails}
 							options={{ headerLeft: (props) => <BackButton {...props} /> }}
 						/>
 					</Stack.Navigator>
