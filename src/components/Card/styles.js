@@ -16,6 +16,9 @@ const styles = StyleSheet.create({
 		height: width * 0.5,
 		borderRadius: 10,
 	},
+	row: {
+		alignItems: 'center',
+	},
 	title: {
 		fontSize: 14,
 		color: colors.grey,
@@ -24,10 +27,10 @@ const styles = StyleSheet.create({
 		marginTop: 10,
 	},
 	dishImage: {
-		width: 120,
-		height: 120,
+		width: 100,
+		height: 100,
 		borderRadius: 60,
-		marginTop: -80,
+		marginTop: -60,
 	},
 	column: {
 		flexDirection: 'column',

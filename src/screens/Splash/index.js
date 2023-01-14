@@ -28,4 +28,4 @@ const Splash = ({ navigation }) => {
 	)
 }
 
-export default React.memo(Splash)
+export default memo(Splash)

@@ -4,8 +4,8 @@ import colors from '../../constants/colors'
 const styles = StyleSheet.create({
 	container: {
 		marginHorizontal: 24,
+		flex: 1,
 	},
-	recipeCard: {},
 })
 
 export default styles

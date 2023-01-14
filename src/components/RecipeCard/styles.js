@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
 		height: 30,
 		borderRadius: 20,
 		marginRight: 8,
+		backgroundColor: colors.lightGrey,
 	},
 	icon: {
 		width: 17,

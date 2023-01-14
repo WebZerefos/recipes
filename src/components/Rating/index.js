@@ -1,4 +1,4 @@
-import { Image, Text, View } from 'react-native'
+import { Image, View } from 'react-native'
 import React, { memo } from 'react'
 import styles from './styles'
 
@@ -10,6 +10,7 @@ const Rating = ({ rating }) => {
 			if (Math.round(rating) >= star) {
 				return (
 					<Image
+						key={star}
 						style={styles.star}
 						source={require('../../../assets/starfill.png')}
 					/>
@@ -18,6 +19,7 @@ const Rating = ({ rating }) => {
 
 			return (
 				<Image
+					key={star}
 					style={styles.star}
 					source={require('../../../assets/star.png')}
 				/>

@@ -6,10 +6,10 @@ import Rating from '../Rating'
 const Card = ({ title, style, image, time }) => {
 	return (
 		<View style={[styles.container, style]}>
-			<View>
+			<View style={styles.row}>
 				<Image
 					style={styles.dishImage}
-					source={{ uri: 'https://images.immediate.co.uk/production/volatile/sites/30/2013/05/Puttanesca-fd5810c.jpg' }}
+					source={{ uri: 'https://img.buzzfeed.com/tasty-app-user-assets-prod-us-east-1/recipes/11e6176999dd4d3fa7444224e8891cdb.jpeg' }}
 				/>
 
 				<Text
